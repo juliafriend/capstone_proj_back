@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 @SpringBootApplication
 @RestController
 public class PackApplication {
-	@Autowired
+
 	private PackListRepository packlistRepository;
 
 	public static void main(String[] args) {
