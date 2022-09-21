@@ -144,7 +144,6 @@ class App extends React.Component {
                 <input type="submit" value="Create List" />
             </form>
             <h2>Current Packing List</h2>
-            <ul>
                 {
                     this.state.packlists.map(
                         (packlist) => {
@@ -170,7 +169,6 @@ class App extends React.Component {
                     )}
                     )
                 }
-            </ul>
         </div>
     }
 }

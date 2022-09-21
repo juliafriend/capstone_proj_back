@@ -44,7 +44,7 @@ public class PackList {
   public void setDate(String date) {
     this.date = date;
   }
-  
+
   public String getOutfitOne() {
     return outfitOne;
   }
@@ -52,6 +52,7 @@ public class PackList {
   public void setOutfitOne(String outfitOne) {
     this.outfitOne = outfitOne;
   }
+
   public String getOutfitTwo() {
     return outfitTwo;
   }
@@ -59,6 +60,7 @@ public class PackList {
   public void setOutfitTwo(String outfitTwo) {
     this.outfitTwo = outfitTwo;
   }
+  
   public String getOutfitThree() {
     return outfitThree;
   }
