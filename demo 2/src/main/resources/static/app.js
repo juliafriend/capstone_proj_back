@@ -147,13 +147,14 @@ class App extends React.Component {
             <ul>
                 {
                     this.state.packlists.map(
-                        (packlist, index) => {
-                            return    <li key={index}>
-                                {packlist.day}
-                                {packlist.date}
-                                {packlist.outfitOne}
-                                {packlist.outfitTwo}
-                                {packlist.outfitThree}
+                        (packlist) => {
+                            return (   
+                                <div>
+                                <h2>{packlist.day}</h2>
+                                <h2>{packlist.date}</h2>
+                                <h4>{packlist.outfitOne}</h4>
+                                <h4>{packlist.outfitTwo}</h4>
+                                <h4>{packlist.outfitThree}</h4>
                                 
                                 <button value={packlist.id} onClick={this.deletePacklist}>DELETE</button>
 
@@ -165,8 +166,8 @@ class App extends React.Component {
                                     <input onKeyUp={this.changeUpdateOutfitThree} type="text" placeholder="Outfit 3"/><br/>
                                     <input type="submit" value="Update List"/>
                                 </form>
-                            </li>
-                        }
+                            </div>
+                    )}
                     )
                 }
             </ul>
