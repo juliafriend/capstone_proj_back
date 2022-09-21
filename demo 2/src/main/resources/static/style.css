@@ -24,10 +24,17 @@ body {
     margin-top: 12px;
   }
   .container {
-    background-color: rgb(244, 242, 245);
+    background-color: rgb(157, 191, 203);
     border: 1px solid black;
     padding: .5em;
     text-align: center;
     margin: 3px 3px 3px 3px;
     width: 20vw;
+    height: 25vw;
+  }
+  .footer {
+    background-color: antiquewhite;
+    padding: 2em;
+    margin-top: 100px;
+    height: 10vw;
   }

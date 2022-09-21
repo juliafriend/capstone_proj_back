@@ -13,6 +13,7 @@ Wed Sep 21
 
 Thu Sep 22
     -finish Java backend
+    -deploy to Heroku
 
 Fri Sep 23
     

@@ -134,17 +134,7 @@ class App extends React.Component {
     }
     render = () => {
         return <div>
-            <div className="newContainer">
-            <h2>Add to your list</h2>
-            <form onSubmit={this.createPackList}>
-                <input onKeyUp={this.changeNewDay} type="text" placeholder="Day #" /><br/>
-                <input onKeyUp={this.changeNewDate} type="text" placeholder="Date" /><br/>
-                <input onKeyUp={this.changeNewOutfitOne} type="text" placeholder="Outfit 1" /><br/>
-                <input onKeyUp={this.changeNewOutfitTwo} type="text" placeholder="Outfit 2" /><br/>
-                <input onKeyUp={this.changeNewOutfitThree} type="text" placeholder="Outfit 3" /><br/>
-                <input type="submit" value="Add to List" />
-            </form>
-            </div>
+
             <h2>Current Packing List</h2>
             <div className="mainContainer">
                 {
@@ -173,6 +163,23 @@ class App extends React.Component {
                     )}
                     )
                 }
+            <div className="newContainer">
+            <form onSubmit={this.createPackList}>
+                <input onKeyUp={this.changeNewDay} type="text" placeholder="Day #" /><br/>
+                <input onKeyUp={this.changeNewDate} type="text" placeholder="Date" /><br/>
+                <input onKeyUp={this.changeNewOutfitOne} type="text" placeholder="Outfit 1" /><br/>
+                <input onKeyUp={this.changeNewOutfitTwo} type="text" placeholder="Outfit 2" /><br/>
+                <input onKeyUp={this.changeNewOutfitThree} type="text" placeholder="Outfit 3" /><br/>
+                <input type="submit" value="Add to List" />
+            </form>
+            </div>
+            </div>
+            <div className="Outfit Options">
+                <h3>travel day</h3>
+                <h3>activewear</h3>
+                <h3>casual</h3>
+                <h3>formal/going out</h3>
+                <h3>accessories</h3>
             </div>
         </div>
     }
