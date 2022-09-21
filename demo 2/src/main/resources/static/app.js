@@ -135,6 +135,7 @@ class App extends React.Component {
     render = () => {
         return <div>
             <h2>Create new Packing List</h2>
+            <div className="newContainer">
             <form onSubmit={this.createPackList}>
                 <input onKeyUp={this.changeNewDay} type="text" placeholder="Day #" /><br/>
                 <input onKeyUp={this.changeNewDate} type="text" placeholder="Date" /><br/>
@@ -143,12 +144,14 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewOutfitThree} type="text" placeholder="Outfit 3" /><br/>
                 <input type="submit" value="Create List" />
             </form>
+            </div>
             <h2>Current Packing List</h2>
+            <div className="mainContainer">
                 {
                     this.state.packlists.map(
                         (packlist) => {
                             return (   
-                                <div>
+                                <div className="container">
                                 <h2>{packlist.day}</h2>
                                 <h2>{packlist.date}</h2>
                                 <h4>{packlist.outfitOne}</h4>
@@ -169,6 +172,7 @@ class App extends React.Component {
                     )}
                     )
                 }
+            </div>
         </div>
     }
 }
