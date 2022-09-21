@@ -1,6 +1,19 @@
 body {
-    background-color: rgb(183, 164, 200);
+    background-color: rgb(251, 252, 253);
     text-align: center;
+}
+.title{
+    background-color: rgb(228, 231, 232);
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-top: 50px;
+    border-radius: 50%;
+    line-height: 10px;
+}
+.newContainer {
+    border: 1.5px solid black;
+    padding: 1em;
+    margin: 50px 500px 50px 500px;
 }
 .mainContainer {
     display:flex;

@@ -134,8 +134,8 @@ class App extends React.Component {
     }
     render = () => {
         return <div>
-            <h2>Add to your list</h2>
             <div className="newContainer">
+            <h2>Add to your list</h2>
             <form onSubmit={this.createPackList}>
                 <input onKeyUp={this.changeNewDay} type="text" placeholder="Day #" /><br/>
                 <input onKeyUp={this.changeNewDate} type="text" placeholder="Date" /><br/>
