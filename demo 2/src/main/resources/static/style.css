@@ -1,4 +1,20 @@
-* {
+body {
     background-color: rgb(183, 164, 200);
     text-align: center;
 }
+.mainContainer {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .container {
+    background-color: rgb(244, 242, 245);
+    border: 1px solid black;
+    padding: .5em;
+    text-align: center;
+    margin: 3px 3px 3px 3px;
+    width: 20vw;
+  }

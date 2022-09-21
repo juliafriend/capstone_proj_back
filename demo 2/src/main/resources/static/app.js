@@ -134,7 +134,7 @@ class App extends React.Component {
     }
     render = () => {
         return <div>
-            <h2>Create new Packing List</h2>
+            <h2>Add to your list</h2>
             <div className="newContainer">
             <form onSubmit={this.createPackList}>
                 <input onKeyUp={this.changeNewDay} type="text" placeholder="Day #" /><br/>
@@ -142,7 +142,7 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewOutfitOne} type="text" placeholder="Outfit 1" /><br/>
                 <input onKeyUp={this.changeNewOutfitTwo} type="text" placeholder="Outfit 2" /><br/>
                 <input onKeyUp={this.changeNewOutfitThree} type="text" placeholder="Outfit 3" /><br/>
-                <input type="submit" value="Create List" />
+                <input type="submit" value="Add to List" />
             </form>
             </div>
             <h2>Current Packing List</h2>
@@ -158,8 +158,7 @@ class App extends React.Component {
                                 <h4>{packlist.outfitTwo}</h4>
                                 <h4>{packlist.outfitThree}</h4>
                                 
-                                <button value={packlist.id} onClick={this.deletePacklist}>DELETE</button>
-
+                                <details> <summary>Modify List</summary>
                                 <form id={packlist.id} onSubmit={this.updatePacklist}>
                                     <input onKeyUp={this.changeUpdateDay} type="text" placeholder="Day #"/><br/>
                                     <input onKeyUp={this.changeUpdateDate} type="text" placeholder="Date"/><br/>
@@ -168,6 +167,8 @@ class App extends React.Component {
                                     <input onKeyUp={this.changeUpdateOutfitThree} type="text" placeholder="Outfit 3"/><br/>
                                     <input type="submit" value="Update List"/>
                                 </form>
+                                <button value={packlist.id} onClick={this.deletePacklist}>Delete</button>
+                                </details>
                             </div>
                     )}
                     )
