@@ -19,13 +19,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringBootApplication
 @RestController
-public class PackApplication {
+public class OutfitsApplication {
 	@Autowired
-	private PackListRepository packlistRepository;
-	
+
+	private OutfitsRepository outfitsRepository;
 
 	public static void main(String[] args) {
-		SpringApplication.run(PackApplication.class, args);
+		SpringApplication.run(OutfitsApplication.class, args);
 	}
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
@@ -37,30 +37,32 @@ public class PackApplication {
 		};
 	}
 
+
 	@CrossOrigin(origins = "http://localhost:8080")
 	@GetMapping("/pack")
-	public Iterable<PackList> index() {
-		return packlistRepository.findAll();
+	public Iterable<Outfits> index() {
+		return outfitsRepository.findAll();
 	}
-	
+		
+
 
 	@PostMapping("/pack")
-	public Iterable<PackList> create (@RequestBody PackList packlistData) {
-		packlistRepository.save(packlistData);
-		return packlistRepository.findAll();
+	public Iterable<Outfits> create (@RequestBody Outfits outfitsData) {
+		outfitsRepository.save(outfitsData);
+		return outfitsRepository.findAll();
 	}
 
 	@DeleteMapping("/pack/{id}")
-	public Iterable<PackList> delete(@PathVariable int id) {
-		packlistRepository.deleteById(id);
-		return packlistRepository.findAll();
+	public Iterable<Outfits> delete(@PathVariable int id) {
+		outfitsRepository.deleteById(id);
+		return outfitsRepository.findAll();
 	}
 
 	@PutMapping("/pack/{id}")
-	public Iterable<PackList> update(@PathVariable int id, @RequestBody PackList packlistData) {
-		packlistData.setId(id);
-		packlistRepository.save(packlistData);
-		return packlistRepository.findAll();
+	public Iterable<Outfits> update(@PathVariable int id, @RequestBody Outfits outfitsData) {
+		outfitsData.setId(id);
+		outfitsRepository.save(outfitsData);
+		return outfitsRepository.findAll();
 	}
 
 }
