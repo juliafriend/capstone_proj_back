@@ -16,13 +16,16 @@ Thu Sep 22
     -deploy to Heroku
 
 Fri Sep 23
+    -finish 2nd model for "Upcoming Trips"
+    -start 3rd model for "Example Outfits"
     
 Sat Sep 24
 
 Sun Sep 25
 
 Mon Sep 26
-
+    -Tailwinds?
+    
 Tue Sep 27
 
 Wed Sep 28

@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(251, 252, 253);
     text-align: center;
 }
 .title{
@@ -30,7 +29,7 @@ body {
     text-align: center;
     margin: 3px 3px 3px 3px;
     width: 20vw;
-    height: 25vw;
+    height: 30vw;
   }
   .footer {
     background-color: antiquewhite;
