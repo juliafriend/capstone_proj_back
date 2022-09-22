@@ -21,6 +21,13 @@ public class PackList {
 
   private String outfitThree;
 
+  private String type;
+
+  private String items;
+
+  private String image;
+
+
   public Integer getId() {
     return id;
   }
@@ -67,5 +74,26 @@ public class PackList {
 
   public void setOutfitThree (String outfitThree) {
     this.outfitThree = outfitThree;
+  }
+  public String getType() {
+    return type;
+  }
+
+  public void setType (String type) {
+    this.type = type;
+  }
+  public String getItems() {
+    return items;
+  }
+
+  public void setItems (String items) {
+    this.items = items;
+  }
+  public String getImage() {
+    return image;
+  }
+
+  public void setImage (String image) {
+    this.image = image;
   }
 }
