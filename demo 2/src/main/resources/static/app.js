@@ -1,3 +1,5 @@
+import Outfits from './Outfits'
+
 class App extends React.Component {
     state = {
         packlists:[]
@@ -175,6 +177,7 @@ class App extends React.Component {
             </div>
             </div>
             <div className="Outfit Options">
+                
                 <h3>travel day</h3>
                 <h3>activewear</h3>
                 <h3>casual</h3>
