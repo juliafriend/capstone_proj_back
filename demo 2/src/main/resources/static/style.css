@@ -1,5 +1,6 @@
 * {
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .title{
     background-color: rgb(228, 231, 232);    
@@ -28,8 +29,11 @@
     height: 30vw;
   }
   .footer {
-    background-color: rgb(218, 200, 177);
+    background-color: rgb(220, 171, 107);
     padding: 2em;
     margin-top: 100px;
-    height: 10vw;
+    height: 5vw;
+  }
+  .footer-link {
+    margin-right: 20px;
   }
