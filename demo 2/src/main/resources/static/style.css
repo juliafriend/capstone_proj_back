@@ -1,13 +1,8 @@
-body {
+* {
     text-align: center;
 }
 .title{
-    background-color: rgb(228, 231, 232);
-    margin-right: 600px;
-    margin-left: 600px;
-    margin-top: 50px;
-    border-radius: 50%;
-    line-height: 10px;
+    background-color: rgb(228, 231, 232);    
 }
 .newContainer {
     border: 1.5px solid black;
