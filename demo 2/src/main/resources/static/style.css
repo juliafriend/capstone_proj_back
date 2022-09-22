@@ -8,6 +8,7 @@
     border: 1.5px solid black;
     padding: 1em;
     margin: 50px 500px 50px 500px;
+    background-color: rgb(199, 199, 211);
 }
 .mainContainer {
     display:flex;
