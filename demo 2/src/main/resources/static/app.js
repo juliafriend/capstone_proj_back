@@ -1,5 +1,3 @@
-import Outfits from './Outfits'
-
 class App extends React.Component {
     state = {
         packlists:[]
@@ -25,6 +23,9 @@ class App extends React.Component {
                 outfitOne:this.state.newOutfitOne,
                 outfitTwo:this.state.newOutfitTwo,
                 outfitThree:this.state.newOutfitThree,
+                type:this.state.newType,
+                items:this.state.newItems,
+                image:this.state.newImage,
             }
         ).then(
             (response) => {
@@ -61,6 +62,21 @@ class App extends React.Component {
             newOutfitThree:event.target.value
         });
     }
+    changeNewType = (event) => {
+        this.setState({
+            newType:event.target.value
+        });
+    }
+    changeNewItems = (event) => {
+        this.setState({
+            newItems:event.target.value
+        });
+    }
+    changeNewImage = (event) => {
+        this.setState({
+            newImage:event.target.value
+        });
+    }
 
     deletePacklist = (event) => {
         axios.delete('/pack/' + event.target.value).then(
@@ -83,6 +99,9 @@ class App extends React.Component {
                 outfitOne:this.state.updateOutfitOne,
                 outfitTwo:this.state.updateOutfitTwo,
                 outfitThree:this.state.updateOutfitThree,
+                type:this.state.updateType,
+                items:this.state.updateItems,
+                image:this.state.updateImage
             }
         ).then(
             (response) => {
@@ -93,6 +112,9 @@ class App extends React.Component {
                     outfitOne:'',
                     outfitTwo:'',
                     outfitThree:'',
+                    type:'',
+                    items:'',
+                    image:''
                 })
             }
         )
@@ -149,6 +171,9 @@ class App extends React.Component {
                                 <h4>{packlist.outfitOne}</h4>
                                 <h4>{packlist.outfitTwo}</h4>
                                 <h4>{packlist.outfitThree}</h4>
+                                <h4>{packlist.type}</h4>
+                                <h4>{packlist.items}</h4>
+                                <h4>{packlist.image}</h4>
                                 
                                 <details> <summary>Modify List</summary>
                                 <form id={packlist.id} onSubmit={this.updatePacklist}>
@@ -172,6 +197,9 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewOutfitOne} type="text" placeholder="Outfit 1" /><br/>
                 <input onKeyUp={this.changeNewOutfitTwo} type="text" placeholder="Outfit 2" /><br/>
                 <input onKeyUp={this.changeNewOutfitThree} type="text" placeholder="Outfit 3" /><br/>
+                <input onKeyUp={this.changeNewType} type="text" placeholder="type" /><br/>
+                <input onKeyUp={this.changeNewItems} type="text" placeholder="items" /><br/>
+                <input onKeyUp={this.changeNewImage} type="text" placeholder="image" /><br/>
                 <input type="submit" value="Add to List" />
             </form>
             </div>
