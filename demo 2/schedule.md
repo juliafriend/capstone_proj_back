@@ -13,7 +13,8 @@ Wed Sep 21
 
 Thu Sep 22
     -finish Java backend
-    -deploy to Heroku
+    -deploy to Heroku:
+    -- https://stark-sea-62869.herokuapp.com/
 
 Fri Sep 23
     -finish 2nd model for "Upcoming Trips"
