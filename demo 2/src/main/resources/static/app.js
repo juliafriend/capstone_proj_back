@@ -133,10 +133,17 @@ class App extends React.Component {
         )
     }
     render = () => {
-        return <div>
-
+        return <>
+        <div className= "mainContainer">
+        <div class="title">
+        <h1>PackMan</h1>
+        <div className='pictureContainer'>
+            <img class='pic' src="https://i.imgur.com/QgTByIpt.jpg" />
+          </div>
+        <h3>Your Packing Assistant</h3>
+        </div>
             <h2>Current Packing List</h2>
-            <div className="mainContainer">
+            <div className="">
                 {
                     this.state.packlists.map(
                         (packlist) => {
@@ -181,7 +188,8 @@ class App extends React.Component {
                 <h3>formal/going out</h3>
                 <h3>accessories</h3>
             </div>
-        </div>
+            </div>
+        </>
     }
 }
 
