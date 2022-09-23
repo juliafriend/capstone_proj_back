@@ -24,7 +24,7 @@ public class PackApplication {
 		SpringApplication.run(PackApplication.class, args);
 	}
 
-	@GetMapping("/")
+	@GetMapping("/pack")
 	public Iterable<PackList> index() {
 		return packlistRepository.findAll();
 	}

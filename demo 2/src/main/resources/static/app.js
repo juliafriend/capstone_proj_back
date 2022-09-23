@@ -205,6 +205,7 @@ class App extends React.Component {
             </div>
             </div>
             <div className="Outfit Options">
+            <div className="mainContainer">
             {
                     this.state.packlists.map(
                         (packlist) => {
@@ -217,6 +218,7 @@ class App extends React.Component {
                     )}
                     )
                 }
+            </div>
             </div>
         </div>
     }
