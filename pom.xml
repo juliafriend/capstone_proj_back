@@ -47,11 +47,11 @@
             	</configuration>
 			    <version>3.0.1</version>
                 <executions>
-                    <execution>
+                    <!-- <execution>
                         <id>copy-dependencies</id>
                         <phase>package</phase>
                         <goals><goal>copy-dependencies</goal></goals>
-                    </execution>
+                    </execution> -->
                 </executions>
 			</plugin>
 		</plugins>

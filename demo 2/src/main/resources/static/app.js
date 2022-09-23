@@ -183,7 +183,10 @@ class App extends React.Component {
                                 </form>
                                 <button value={packlist.id} onClick={this.deletePacklist}>Delete</button>
                                 </details>
+       
+                                
                             </div>
+                            
                     )}
                     )
                 }
