@@ -210,7 +210,7 @@ class App extends React.Component {
                     this.state.packlists.map(
                         (packlist) => {
                             return (   
-                                <div className="container">
+                                <div className="container2">
                                 <h4>{packlist.type}</h4>
                                 <h4>{packlist.items}</h4>
                                 <h4>{packlist.image}</h4>

@@ -28,6 +28,15 @@
     width: 20vw;
     height: 30vw;
   }
+  .container1 {
+    background-color: rgb(91, 131, 145);
+    border: 1px solid black;
+    padding: .5em;
+    text-align: center;
+    margin: 3px 3px 3px 3px;
+    width: 20vw;
+    height: 30vw;
+  }
   .footer {
     background-color: rgb(231, 189, 134);
     padding: 2em;
