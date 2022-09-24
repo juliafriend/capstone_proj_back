@@ -9,7 +9,7 @@
     padding: 0em;    
 }
 .pic {
-    height: 10vw;
+    height: 8vw;
 }
 .asst, .packMan {
     padding: 0em;
@@ -48,7 +48,9 @@
     grid-row-end:2;
     height: 75px;
 }
+
 .left {
+
     background-color: #3e969b;
     color: white;
     grid-column-start: 1;

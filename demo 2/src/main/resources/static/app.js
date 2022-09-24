@@ -157,17 +157,14 @@ class App extends React.Component {
         )
     }
     render = () => {
-        return <>
+        return (
+        <>
             <div className="mainContainer">
-                <div className="header">
-                <h1 className="packMan">PackMan</h1>
-                <img className='pic' src="https://i.imgur.com/QgTByIpt.jpg" /> 
-                <h3 className='asst'>Your Packing Assistant</h3>
+                <div className="left">
+                <h2>Upcoming Trips:</h2>
+                <li>Seattle</li>
+                <li>Boston</li>
                 </div>
-            <div className="left">Upcoming Trips:
-            <li>Seattle</li>
-            <li>Boston</li>
-            </div>
             <h2 className="currentList">Current Packing List</h2>
                 {
                     this.state.packlists.map(
@@ -224,13 +221,10 @@ class App extends React.Component {
                     )}
                     )
                 }
-                <div class="footer">
-                <a class="footer-link1" href="https://arcane-garden-99958.herokuapp.com/">Need Travel Recommendations?</a>
-                <a class="footer-link2" href="mailto:juliaannefriend@gmail.com.com">Contact Us</a>
-                </div>
             </div>
             </div>
         </>
+        )
     }
 }
 
