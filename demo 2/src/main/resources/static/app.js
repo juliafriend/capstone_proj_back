@@ -157,10 +157,15 @@ class App extends React.Component {
         )
     }
     render = () => {
-        return <div>
-            <h2>Upcoming Trips:</h2>
-            <h2>Current Packing List</h2>
+        return <>
             <div className="mainContainer">
+                <div className="header">
+                <h1>PackMan</h1>
+                <img className='pic' src="https://i.imgur.com/QgTByIpt.jpg" /> 
+                <h3>Your Packing Assistant</h3>
+                </div>
+            <h2 className="left">Upcoming Trips:</h2>
+            <h2>Current Packing List</h2>
                 {
                     this.state.packlists.map(
                         (packlist) => {
@@ -183,10 +188,7 @@ class App extends React.Component {
                                 </form>
                                 <button value={packlist.id} onClick={this.deletePacklist}>Delete</button>
                                 </details>
-       
-                                
-                            </div>
-                            
+                            </div>   
                     )}
                     )
                 }
@@ -207,7 +209,6 @@ class App extends React.Component {
             <div className="Outfit Options">
             <h2>Get inspired by some example outfits</h2>
             <div className="mainContainer">
-                
             {
                     this.state.packlists.map(
                         (packlist) => {
@@ -220,9 +221,13 @@ class App extends React.Component {
                     )}
                     )
                 }
+                <div class="footer">
+                <a class="footer-link" href="https://arcane-garden-99958.herokuapp.com/">Need Travel Recommendations?</a>
+                <a class="footer-link" href="mailto:juliaannefriend@gmail.com.com">Contact Us</a>
+                </div>
             </div>
             </div>
-        </div>
+        </>
     }
 }
 
