@@ -205,8 +205,9 @@ class App extends React.Component {
             </div>
             </div>
             <div className="Outfit Options">
+            <h2>Get inspired by some example outfits</h2>
             <div className="mainContainer">
-                <h2>Get inspired by some example outfits</h2>
+                
             {
                     this.state.packlists.map(
                         (packlist) => {
