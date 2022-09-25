@@ -157,8 +157,7 @@ class App extends React.Component {
         )
     }
     render = () => {
-        return (
-        <>
+        return <div>
             <div className="mainContainer">
                 <div className="left">
                 <h2>Upcoming Trips:</h2>
@@ -223,8 +222,7 @@ class App extends React.Component {
                 }
             </div>
             </div>
-        </>
-        )
+        </div>
     }
 }
 
