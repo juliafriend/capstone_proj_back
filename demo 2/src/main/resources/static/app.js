@@ -158,13 +158,9 @@ class App extends React.Component {
     }
     render = () => {
         return <div>
+
+            <h2>Current Packing List</h2>
             <div className="mainContainer">
-                <div className="left">
-                <h2>Upcoming Trips:</h2>
-                <li>Seattle</li>
-                <li>Boston</li>
-                </div>
-            <h2 className="currentList">Current Packing List</h2>
                 {
                     this.state.packlists.map(
                         (packlist) => {
@@ -175,6 +171,9 @@ class App extends React.Component {
                                 <h4>{packlist.outfitOne}</h4>
                                 <h4>{packlist.outfitTwo}</h4>
                                 <h4>{packlist.outfitThree}</h4>
+                                <h4>{packlist.type}</h4>
+                                <h4>{packlist.items}</h4>
+                                <h4>{packlist.image}</h4>
                                 
                                 <details> <summary>Modify List</summary>
                                 <form id={packlist.id} onSubmit={this.updatePacklist}>
@@ -187,7 +186,7 @@ class App extends React.Component {
                                 </form>
                                 <button value={packlist.id} onClick={this.deletePacklist}>Delete</button>
                                 </details>
-                            </div>   
+                            </div>
                     )}
                     )
                 }
@@ -206,21 +205,12 @@ class App extends React.Component {
             </div>
             </div>
             <div className="Outfit Options">
-            <h2>Get inspired by some example outfits</h2>
-            <div className="mainContainer2">
-            {
-                    this.state.packlists.map(
-                        (packlist) => {
-                            return (   
-                                <div className="container2">
-                                <h4>{packlist.type}</h4>
-                                <h4>{packlist.items}</h4>
-                                <h4>{packlist.image}</h4>
-                            </div>
-                    )}
-                    )
-                }
-            </div>
+                
+                <h3>travel day</h3>
+                <h3>activewear</h3>
+                <h3>casual</h3>
+                <h3>formal/going out</h3>
+                <h3>accessories</h3>
             </div>
         </div>
     }
