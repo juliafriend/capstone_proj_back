@@ -74,13 +74,17 @@
 
 .footer {
     background-color: rgb(231, 189, 134);
-    color: white;
     grid-column-start: 1;
     grid-column-end: 11;
     padding: 0em;   
+    height: 80px;
+    margin-top: 50px;
 }
-.footer-links {
-    margin-right: 20px;
+.footer-link {
+    margin-right: 100px;
+    color: white;
+    font-size: 20px;
+    padding: 2em;
 }
 .outfitPic {
     height: 200px;
