@@ -211,7 +211,7 @@ class App extends React.Component {
                                 <div className="container2">
                                 <h4>{packlist.type}</h4>
                                 <h4>{packlist.items}</h4>
-                                <h4>{packlist.image}</h4>
+                                <img className="outfitPic" src={packlist.image}></img>
                             </div>
                     )}
                     )
