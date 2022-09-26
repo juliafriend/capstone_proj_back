@@ -200,8 +200,9 @@ class App extends React.Component {
             </form>
             </div>
             </div>
-            <div className="Outfit Options">
+            <div className="OutfitOptions">
             <h2>Get inspired by some example outfits</h2>
+            </div>
             <div className="mainContainer2">
             {
                     this.state.packlists.map(
@@ -217,7 +218,6 @@ class App extends React.Component {
                 }
             </div>
             </div>
-        </div>
     }
 }
 
