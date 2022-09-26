@@ -24,11 +24,10 @@
     grid-row-gap: 1px; 
 }
 .mainContainer2 {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-rows: 100px 100px 100px;
-    grid-column-gap: 10px; 
-    grid-row-gap: 1px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .mainContainer > div, h1, h2 {
     display: grid;
@@ -44,12 +43,11 @@
     background-color: rgb(91, 131, 145);
     border: 1px solid black;
     padding: .5em;
-    height: 400px;
+    height: 320px;
+    text-align: center;
+    margin: auto auto 10px auto;
   }
-  .mainContainer2 > div, h1, h2 {
-    display: grid;
-    place-items: center;
-}
+
 .currentList {
     grid-column-start: 1;
     grid-column-end: 11;
@@ -74,13 +72,16 @@
     grid-row-end: 5;
 }
 
-  .footer {
+.footer {
     background-color: rgb(231, 189, 134);
     color: white;
-    display: grid;
-    align-items: center;
-    grid-area: 3 / 1 / 4 / span 11;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    align-items: center;
-  }
+    grid-column-start: 1;
+    grid-column-end: 11;
+    padding: 0em;   
+}
+.footer-links {
+    margin-right: 20px;
+}
+.outfitPic {
+    height: 200px;
+}
