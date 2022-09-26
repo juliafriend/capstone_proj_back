@@ -159,11 +159,6 @@ class App extends React.Component {
     render = () => {
         return <div>
             <div className="mainContainer">
-                <div className="left">
-                <h2>Upcoming Trips:</h2>
-                <li>Seattle</li>
-                <li>Boston</li>
-                </div>
             <h2 className="currentList">Current Packing List</h2>
                 {
                     this.state.packlists.map(

@@ -19,13 +19,15 @@ Thu Sep 22
 Fri Sep 23
     -finish 2nd model for "Upcoming Trips"
     -start 3rd model for "Example Outfits"
+    -some styling
     
 Sat Sep 24
-
+    -set up express backend for test
 Sun Sep 25
 
 Mon Sep 26
-    -Tailwinds?
+    -successfully deploy Java backend
+    -
     
 Tue Sep 27
 
